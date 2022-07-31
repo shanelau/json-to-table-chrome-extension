@@ -216,7 +216,7 @@ function errorMessage() {
  */
 function isJsonOnlyPage() {
     return document.body !== undefined
-        && document.body.getElementsByTagName("*").length === 1
+        && document.body.getElementsByTagName("*").length >= 1
         && document.getElementsByTagName("pre").length === 1;
 }
 
